@@ -82,7 +82,7 @@ if __name__ == '__main__':
     print(f'{datetime.now().strftime("%Y-%m-%d %H:%M:%S")} - INFO - Auto-test script started. (node_num_list: '
           f'{node_num_list}, run_cl2: {args.run_cl2}, baseline: {args.baseline}, scheduler_placement: '
           f'{args.scheduler_placement}, controller_manager_placement: {args.controller_manager_placement})')
-    running_main = args.baseline in ['weighted', 'p99', 'tsp', 'merkury', 'ga', 'disable_fc']
+    running_main = args.baseline in ['weighted', 'p99', 'ours']
     # main params
     main_params = {'baseline': args.baseline,
                    'pred_model': 'latest',
@@ -92,9 +92,9 @@ if __name__ == '__main__':
                    'dry_run': False,
                    'cpu_update_range': 0.2,
                    'mem_update_range': 0.2,
-                   'load_threshold': 0.7 if args.baseline in ['weighted', 'merkury', 'ga', 'disable_fc'] else 0.0,
+                   'load_threshold': 0.7 if args.baseline in ['weighted', 'ours'] else 0.0,
                    'disable_mem_alloc': True,
-                   'calibration': args.baseline in ['merkury', 'ga', 'disable_fc'],
+                   'calibration': args.baseline in ['ours'],
                    'wider_fc': args.wider_fc}
     current_log_handler = None
     if args.wo_cl2:

@@ -3,7 +3,6 @@ import os
 import subprocess
 import multiprocessing
 from datetime import datetime
-import sys
 
 python_path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 

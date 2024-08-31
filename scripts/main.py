@@ -134,7 +134,7 @@ if __name__ == '__main__':
                         help='log file name (default: ours), logs are stored in '
                              '../logs/<FILE_NAME>.log')
     parser.add_argument('--baseline', '-b', type=str, default='merkury',
-                        choices=['ours', 'p99', 'weighted',],
+                        choices=['ours', 'p99', 'weighted'],
                         help=('Resource allocation baseline: \'ours\'--our approach(default), \'p99\'--99 percentile, '
                               '\'weighted\'--allocate according to weight'))
     parser.add_argument('--pred_model', '-p', type=str, default='latest',
