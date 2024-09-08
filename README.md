@@ -1,4 +1,4 @@
-# arak-hotinfra
+# ark-hotinfra
 Code repo for "Adaptive Resource Allocation to Enhance the Kubernetes Performance for Large-Scale Clusters" submitted to HotInfra'24
 
 <img src="images/system-arch.png" alt="system architecture" style="zoom: 67%;" />
