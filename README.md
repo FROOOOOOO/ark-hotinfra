@@ -1,5 +1,5 @@
 # ark-hotinfra
-Code repo for "**A**daptive **R**esource Allocation to Enhance the **K**ubernetes Performance for Large-Scale Clusters" submitted to HotInfra'24
+Code repo for "**A**daptive **R**esource Allocation to Enhance the **K**ubernetes Performance for Large-Scale Clusters" accepted by HotInfra'24
 
 <img src="images/system-arch.png" alt="system architecture" style="zoom: 67%;" />
 
