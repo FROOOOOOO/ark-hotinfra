@@ -260,7 +260,7 @@ class Recommender:
     def _recommend_ours(self, brute_force: bool = False, disable_fc: bool = False, strategy_gus: str = 'balance',
                         strategy_lus: str = 'optimistic') -> (bool, utils.KubeRequestsSummary):
         """
-        MerKury recommendation algorithm
+        our recommendation algorithm
         :param brute_force: whether using brute-force algorithm in optimizer
         :param disable_fc: whether disable flow control params recommendation
         :param strategy_gus: allocation strategy for global unsteady state
